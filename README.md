@@ -1,15 +1,15 @@
-# SMRS - Students Management Record System 🎓
+# SMRS - Students Management Record System 
 
 A simple, full-stack application for registering and managing student records. The frontend is built with **Flutter**, and the backend is powered by **PHP** and **MySQL**, designed to run on a local server environment like XAMPP.
 
-## 🚀 Features
+##  Features
 
 * **Student Registration:** A clean, validated form to input a student's name, roll number, college email, and CGPA.
 * **View Records:** Fetch and display a real-time list of all registered students from the database.
 * **State Management:** Graceful handling of loading states, network errors, and empty database states.
 * **Secure Backend:** PHP backend utilizing prepared statements to prevent SQL injection.
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 * **Frontend:** Flutter (Dart)
 * **Backend:** PHP
@@ -18,7 +18,7 @@ A simple, full-stack application for registering and managing student records. T
 
 ---
 
-## 🗄️ Database Setup (MySQL)
+##  Database Setup (MySQL)
 
 1. Open your XAMPP Control Panel and start **Apache** and **MySQL**.
 2. Open your browser and go to `http://localhost/phpmyadmin/`.

@@ -19,10 +19,10 @@ The application allows users to enter student details such as name, roll number,
 - XAMPP
 
 ### Project Structure
-· lib/ – Flutter application source code
-· insert_student.php – Handles insertion of student records into the database
-· fetch_students.php – Retrieves records from the database
-· pubspec.yaml – Flutter project dependencies
+· ```lib/``` – Flutter application source code
+· ```insert_student.php ```– Handles insertion of student records into the database
+· ```fetch_students.php``` – Retrieves records from the database
+· ```pubspec.yaml``` – Flutter project dependencies
 
 ## How to Run?
 1. Start Apache and MySQL in XAMPP
@@ -30,6 +30,7 @@ The application allows users to enter student details such as name, roll number,
 3. Import the required table structure
 4. Place the PHP files inside the XAMPP htdocs directory
 
-Run Flutter application:
-flutter pub get
-flutter run -d chrome
+5. Run Flutter application:
+
+```flutter pub get```
+```flutter run -d chrome```

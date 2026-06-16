@@ -20,8 +20,11 @@ The application allows users to enter student details such as name, roll number,
 
 ### Project Structure
 · ```lib/``` – Flutter application source code
+
 · ```insert_student.php ```– Handles insertion of student records into the database
+
 · ```fetch_students.php``` – Retrieves records from the database
+
 · ```pubspec.yaml``` – Flutter project dependencies
 
 ## How to Run?
@@ -33,4 +36,5 @@ The application allows users to enter student details such as name, roll number,
 5. Run Flutter application:
 
 ```flutter pub get```
+
 ```flutter run -d chrome```

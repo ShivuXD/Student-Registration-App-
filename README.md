@@ -1,40 +1,36 @@
-# Student-Registration-App
-### Description
-A basic student registration application built using Flutter, PHP, and MySQL. 
-The application allows users to enter student details such as name, roll number, email address, and CGPA, store them in a MySQL database, and view the saved records through a simple user-friendly interface.
+# SMRS - Students Management Record System 🎓
 
-### Features
-- Register student details
-- Store data in a MySQL database
-- Display saved student records
-- Input validation for form fields
-- Flutter Web frontend
-- PHP backend with MySQL integration
+A simple, full-stack application for registering and managing student records. The frontend is built with **Flutter**, and the backend is powered by **PHP** and **MySQL**, designed to run on a local server environment like XAMPP.
 
-### Tech Stack
-- Flutter
-- Dart
-- PHP
-- MySQL
-- XAMPP
+## 🚀 Features
 
-### Project Structure
-· ```lib/``` – Flutter application source code
+* **Student Registration:** A clean, validated form to input a student's name, roll number, college email, and CGPA.
+* **View Records:** Fetch and display a real-time list of all registered students from the database.
+* **State Management:** Graceful handling of loading states, network errors, and empty database states.
+* **Secure Backend:** PHP backend utilizing prepared statements to prevent SQL injection.
 
-· ```insert_student.php ```– Handles insertion of student records into the database
+## 🛠️ Tech Stack
 
-· ```fetch_students.php``` – Retrieves records from the database
+* **Frontend:** Flutter (Dart)
+* **Backend:** PHP
+* **Database:** MySQL
+* **Dependencies:** `http` (for API requests), `google_fonts` (for typography)
 
-· ```pubspec.yaml``` – Flutter project dependencies
+---
 
-## How to Run?
-1. Start Apache and MySQL in XAMPP
-2. Create a MySQL database named Students
-3. Import the required table structure
-4. Place the PHP files inside the XAMPP htdocs directory
+## 🗄️ Database Setup (MySQL)
 
-5. Run Flutter application:
+1. Open your XAMPP Control Panel and start **Apache** and **MySQL**.
+2. Open your browser and go to `http://localhost/phpmyadmin/`.
+3. Create a new database named **`Students`**.
+4. Select the `Students` database, go to the **SQL** tab, and run the following query to create the required table:
 
-```flutter pub get```
-
-```flutter run -d chrome```
+```sql
+CREATE TABLE Information (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    roll_no INT NOT NULL UNIQUE,
+    email VARCHAR(100) NOT NULL,
+    CGPA DECIMAL(3,2) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

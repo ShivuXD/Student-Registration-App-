@@ -76,3 +76,4 @@ echo json_encode($students);
 // Close the database connection to free up server resources
 $conn->close();
 ?>
+?>

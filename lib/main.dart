@@ -3,6 +3,7 @@
 /// SMRS - Students Management Record System
 /// A Flutter application that allows users to register student details
 /// and fetch a list of registered students from a local PHP/MySQL backend.
+library;
 
 import 'dart:convert';
 import 'package:flutter/material.dart';
